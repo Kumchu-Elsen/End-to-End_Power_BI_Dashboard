@@ -1,6 +1,6 @@
 # End-to-End Power BI Dashboard — Operations, Retention & Financial KPI Analytics
 
-**A five-page Power BI report covering student operations and staff/workforce analytics for a Columbia, SC school district — built to demonstrate data modeling, DAX, and dashboard-UX patterns that transfer directly to finance, marketing, healthcare, and HR analytics.**
+**A five-page Power BI report covering student operations and staff/workforce analytics for a Columbia, SC, school district — built to demonstrate data modeling, DAX, and dashboard-UX patterns that transfer directly to finance, marketing, healthcare, and HR analytics.**
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoftexcel&logoColor=white)
@@ -31,18 +31,18 @@ The report solves an education problem, but every visual is a reusable analytica
 | **Demographics (pie / donut / histogram)** | Client segmentation by tier | Persona & audience segmentation | Patient population & risk strata | Headcount by dept / seniority |
 | **Navigation menu + multi-page drill** | Multi-entity / subsidiary reporting | Multi-brand or region switcher | Multi-clinic consolidated reporting | Business-unit consolidated reporting |
 
-The takeaway for a reviewer: repoint the same model at a different fact table and it becomes a churn dashboard, an A/R-aging dashboard, or a workforce-analytics dashboard — no new techniques required.
+The takeaway for a reviewer: repoint the same model at a different fact table and it becomes a churn dashboard, an A/R-aging dashboard, or a workforce-analytics dashboard; no new techniques required.
 
 ---
 
 ## Skills demonstrated
 
-- **Data modeling** — relational structure linking student and staff entities to date-based logic for multi-year trends.
-- **DAX measures** — turnover and retention logic, `AVERAGEX` row-by-row aggregation, `DATEDIFF`/`COALESCE` tenure calculation, distinct-count fee measures, ratio and percentage measures, and conditional exception flags (the automated sub-75% attendance lists).
-- **Report navigation** — a menu landing page with button-driven navigation across four dashboards (the consolidated multi-entity pattern).
-- **Dashboard UX** — an executive KPI strip, deliberate visual hierarchy (the retention scatter as the focal chart), and demotion of low-value reference data (contact directory) to supporting panels.
-- **Visual selection discipline** — matching chart to question: trend → area/line, composition → stacked/donut, distribution → histogram, single value → KPI card, relationship → scatter.
-- **Data-quality rigor** — caught and fixed a misconfigured marks matrix (counting students instead of averaging marks), corrected a mislabeled "retention" chart that was plotting salary, and rebuilt the source data so headcount ratios, fee magnitudes, and locations were internally consistent.
+- **Data modeling**: relational structure linking student and staff entities to date-based logic for multi-year trends.
+- **DAX measures**: turnover and retention logic, `AVERAGEX` row-by-row aggregation, `DATEDIFF`/`COALESCE` tenure calculation, distinct-count fee measures, ratio and percentage measures, and conditional exception flags (the automated sub-75% attendance lists).
+- **Report navigation**: a menu landing page with button-driven navigation across four dashboards (the consolidated multi-entity pattern).
+- **Dashboard UX**: an executive KPI strip, deliberate visual hierarchy (the retention scatter as the focal chart), and demotion of low-value reference data (contact directory) to supporting panels.
+- **Visual selection discipline**: matching chart to question: trend → area/line, composition → stacked/donut, distribution → histogram, single value → KPI card, relationship → scatter.
+- **Data-quality rigor**: caught and fixed a misconfigured marks matrix (counting students instead of averaging marks), corrected a mislabeled "retention" chart that was plotting salary, and rebuilt the source data so headcount ratios, fee magnitudes, and locations were internally consistent.
 
 ---
 
@@ -53,26 +53,26 @@ Five pages: a navigation menu plus four dashboards reached from it.
 ### 1. Navigation (menu)
 A landing page with buttons linking to each of the four dashboards.
 
-### 2. Student Section 1 — Attendance, Demographics & Fees
-- **Attendance** — average attendance by enrollment date (area), an automated follow-up table of students below 75%, class-wise attendance (bar).
-- **Demographics** — total student count (card, 3,000), gender split (pie), scholarship vs. non-scholarship (donut).
-- **Fee Management** — fees collected vs. total (gauge, ~$22M of ~$30M), monthly fee payments (area), class-wise fees paid vs. pending (stacked bar).
+### 2. Student Section 1: Attendance, Demographics & Fees
+- **Attendance**: average attendance by enrollment date (area), an automated follow-up table of students below 75%, class-wise attendance (bar).
+- **Demographics**: total student count (card, 3,000), gender split (pie), scholarship vs. non-scholarship (donut).
+- **Fee Management**: fees collected vs. total (gauge, ~$22M of ~$30M), monthly fee payments (area), class-wise fees paid vs. pending (stacked bar).
 
-### 3. Student Section 2 — Academics, Admissions & Contacts
-- **Academic Performance** — subject × grade average-marks matrix, class-wise average marks (bar), top performers by overall average (table).
-- **Admissions** — monthly new admissions (area), class-wise admissions (column).
-- **Parent & Contact** — emergency-contact slicer, parent contact table, searchable emergency-contact directory.
+### 3. Student Section 2: Academics, Admissions & Contacts
+- **Academic Performance**: subject × grade average-marks matrix, class-wise average marks (bar), top performers by overall average (table).
+- **Admissions**: monthly new admissions (area), class-wise admissions (column).
+- **Parent & Contact**: emergency-contact slicer, parent contact table, searchable emergency-contact directory.
 
-### 4. Teacher Section 1 — Attendance, Payroll & Demographics
-- **Attendance** — attendance by joining date (area), sub-75% follow-up table, teacher-wise attendance (bar).
-- **Salary & Payments** — average salary (gauge, ~$51.85K), department salary distribution across salary/bonus/advance (stacked bar), multi-year payroll trend (area).
-- **Demographics** — total count (card, 200), count by department/subject (column), gender split (pie), experience distribution (histogram).
+### 4. Teacher Section 1: Attendance, Payroll & Demographics
+- **Attendance**: attendance by joining date (area), sub-75% follow-up table, teacher-wise attendance (bar).
+- **Salary & Payments**: average salary (gauge, ~$51.85K), department salary distribution across salary/bonus/advance (stacked bar), multi-year payroll trend (area).
+- **Demographics**: total count (card, 200), count by department/subject (column), gender split (pie), experience distribution (histogram).
 
-### 5. Teacher Section 2 — Hiring, Retention & Contacts
-- **KPI strip** — Active Teachers (170), Turnover Rate (15%), Avg Experience (9.8 yrs), Avg Tenure (3.7 yrs).
-- **Experience vs. Tenure** scatter — the retention focal chart (~200 individual teachers).
+### 5. Teacher Section 2: Hiring, Retention & Contacts
+- **KPI strip**: Active Teachers (170), Turnover Rate (15%), Avg Experience (9.8 yrs), Avg Tenure (3.7 yrs).
+- **Experience vs. Tenure** scatter: the retention focal chart (~200 individual teachers).
 - **Yearly New Hires** (area, 2016–2024) and **Experience vs. Salary** (scatter).
-- **Contact** — compact teacher directory.
+- **Contact**: compact teacher directory.
 
 ---
 
@@ -130,15 +130,15 @@ The dataset is **synthetic and internally consistent**: ~3,000 students and 200 
 > Contact and identity columns demonstrate directory and data-integrity patterns and are populated with fabricated values only.
 
 ### Turnover methodology note
-The reported turnover (15%) is a **cumulative** rate — the share of the 2016–2024 roster that has left. The textbook HR metric is annualized (separations ÷ average headcount per period), which would use a dedicated date dimension. The cumulative version is a deliberate simplification appropriate to a single-snapshot portfolio dataset.
+The reported turnover (15%) is a **cumulative** rate; the share of the 2016–2024 roster that has left. The textbook HR metric is annualized (separations ÷ average headcount per period), which would use a dedicated date dimension. The cumulative version is a deliberate simplification appropriate to a single-snapshot portfolio dataset.
 
 ---
 
 ## Tech stack
 
-- **Power BI Desktop** — modeling, DAX, visuals, button-based page navigation, KPI cards
-- **Microsoft Excel** — source dataset
-- **Power Query (M)** — data cleaning and transformation
+- **Power BI Desktop**: modeling, DAX, visuals, button-based page navigation, KPI cards
+- **Microsoft Excel**: source dataset
+- **Power Query (M)**: data cleaning and transformation
 
 ---
 
@@ -170,7 +170,7 @@ The reported turnover (15%) is a **cumulative** rate — the share of the 2016�
 ![Teacher retention page](screenshots/teacher_section_2.png)
 ```
 
-A short GIF clicking through the navigation menu into each dashboard is the single most effective thing to add — it shows the multi-page pattern at a glance.
+A short GIF that clicks through the navigation menu to each dashboard is the single most effective addition; it shows the multi-page pattern at a glance.
 
 ---
 
@@ -194,4 +194,4 @@ A short GIF clicking through the navigation menu into each dashboard is the sing
 
 ## About
 
-Built as a portfolio piece to demonstrate practical Power BI report development and — more importantly — analytical patterns that generalize across industries. Feedback and questions are welcome.
+Built as a portfolio piece to demonstrate practical Power BI report development and, more importantly, analytical patterns that generalize across industries. Feedback and questions are welcome.
