@@ -1,4 +1,4 @@
-# School Operations & People Analytics Dashboard — Power BI
+# End-to-End Power BI Dashboard — Operations, Retention & Financial KPI Analytics
 
 **A five-page Power BI report covering student operations and staff/workforce analytics for a Columbia, SC school district — built to demonstrate data modeling, DAX, and dashboard-UX patterns that transfer directly to finance, marketing, healthcare, and HR analytics.**
 
