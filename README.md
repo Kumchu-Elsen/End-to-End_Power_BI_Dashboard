@@ -11,9 +11,9 @@
 
 ## Overview
 
-This project is an end-to-end analytics report for an educational institution (a Columbia, SC school district of ~3,000 students and 200 staff), built in Power BI on a fully synthetic dataset — no real personal data. It opens on a navigation menu and branches into four themed dashboards — two for students, two for staff — using button-driven page navigation, the way a multi-entity report lets an analyst jump between business units.
+This project is an end-to-end analytics report for an educational institution (a Columbia, SC school district of ~3,000 students and 200 staff), built in Power BI on a fully synthetic dataset; no real personal data. It opens on a navigation menu and branches into four themed dashboards, two for students, two for staff, using button-driven page navigation, the way a multi-entity report lets an analyst jump between business units.
 
-The reason it sits in my portfolio isn't the school context — it's the analytical patterns. Attrition and retention, receivables aging, payroll distribution, performance scorecards, demographic segmentation, threshold-based exception lists, and executive KPI strips are the same problems finance, marketing, healthcare, and operations teams solve every day. This README maps each pattern to its real-world equivalent so the transferable skill is explicit.
+The reason it sits in my portfolio isn't the school context; it's the analytical patterns. Attrition and retention, receivables aging, payroll distribution, performance scorecards, demographic segmentation, threshold-based exception lists, and executive KPI strips are the same problems finance, marketing, healthcare, and operations teams solve every day. This README maps each pattern to its real-world equivalent so the transferable skill is explicit.
 
 ---
 
